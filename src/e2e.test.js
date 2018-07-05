@@ -13,12 +13,12 @@ beforeAll(async () => {
 describe('Restaurants', () => {
   test('Heading', async () => {
     await page.goto(`${appUrlBase}/`)
-    await page.waitForSelector('h1')
-    const result = await page.evaluate(() => {
-      return document.querySelector('h1').innerText
+    await page.waitForSelector('.restaurants')
+    const restaurants = await page.evaluate(() => {
+      return [...document.querySelectorAll('.restaurant .name')].map(el => el.innerText)
     })
 
-    expect(result).toEqual('Restaurant Finder')
+    expect(restaurants.length).toEqual(2)
   })
 })
 
