@@ -9,7 +9,7 @@ class App extends Component {
          <h1>Bookish</h1>
         <div className="restaurants">
           <div className="restaurant">
-            <h2 className="name"></h2>
+            <h2 className="name">Sushi Samba</h2>
           </div>
           <div className="restaurant">
             <h2 className="name"></h2>
