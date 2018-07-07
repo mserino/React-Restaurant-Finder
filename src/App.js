@@ -12,7 +12,7 @@ class App extends Component {
             <h2 className="name">Sushi Samba</h2>
           </div>
           <div className="restaurant">
-            <h2 className="name"></h2>
+            <h2 className="name">The Great Wall</h2>
           </div>
         </div>
        </div>

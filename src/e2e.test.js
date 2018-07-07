@@ -20,6 +20,7 @@ describe('Restaurants', () => {
 
     expect(restaurants.length).toEqual(2)
     expect(restaurants[0]).toEqual('Sushi Samba')
+    expect(restaurants[1]).toEqual('The Great Wall')
   })
 })
 
